@@ -1,0 +1,245 @@
+:root {
+    --verde: #10b981;
+    --verde-hover: #059669;
+    --verde-claro: #ecfdf5;
+    --cinza: #666;
+}
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background: #f3f4f6;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    background: #ffffff;
+    padding: 70px 60px;
+    border-radius: 24px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.06);
+    width: 460px;
+    text-align: center;
+    animation: aparecer 0.6s ease;
+}
+
+h1 {
+    margin: 0 0 50px 0;
+    font-weight: 700;
+    letter-spacing: 8px;
+    font-size: 42px;
+    color: var(--verde);
+}
+
+p {
+    font-size: 13px;
+    color: var(--cinza);
+    margin: 35px 0 20px 0;
+}
+
+.opcoes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.opcao {
+    padding: 12px 26px;
+    border: 1.5px solid var(--verde);
+    background: var(--verde-claro);
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-size: 14px;
+}
+
+.opcao:hover {
+    background: var(--verde);
+    color: white;
+}
+
+.opcao.ativo {
+    background: var(--verde);
+    color: white;
+}
+
+.comecar {
+    margin-top: 50px;
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 18px;
+    background: var(--verde);
+    color: white;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.comecar:hover {
+    background: var(--verde-hover);
+    transform: translateY(-2px);
+}
+
+.comecar:active {
+    transform: scale(0.97);
+}
+#palavraInput{
+    border-radius: 6px;
+    padding: 5px;
+    border-color: #059669;
+}
+
+
+/* ================= TELA DO JOGO ================= */
+
+#jogo {
+    position: relative;
+}
+
+/* Título do jogo */
+#jogo h2 {
+    margin: 0 0 40px 0;
+    font-weight: 600;
+    letter-spacing: 4px;
+    font-size: 22px;
+    color: var(--verde);
+}
+
+/* Palavra exibida */
+#palavraExibida {
+    font-size: 38px;
+    letter-spacing: 18px;
+    margin: 50px 0;
+    font-weight: 600;
+    color: var(--verde);
+    min-height: 50px;
+}
+
+/* Área de input */
+#jogo input {
+    padding: 8px;
+    width: 150px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 12px;
+    border: 1.5px solid var(--verde);
+    background: var(--verde-claro);
+    outline: none;
+    transition: 0.2s ease;
+}
+
+#jogo input:focus {
+    border-color: var(--verde-hover);
+}
+
+/* Botão enviar */
+#enviarLetra {
+    margin-left: 30px;
+    padding: 12px 30px;
+    border-radius: 14px;
+    border: none;
+    background: var(--verde);
+    color: white;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+#enviarLetra:hover {
+    background: var(--verde-hover);
+    transform: translateY(-2px);
+}
+
+#enviarLetra:active {
+    transform: scale(0.97);
+}
+
+.infoJogo {
+    position: absolute;
+    left: -230px;
+    top: 0;
+    text-align: left;
+    width: 200px;
+}
+
+.infoJogo p {
+    margin: 10px 0;
+    font-size: 13px;
+    color: var(--cinza);
+}
+
+.infoJogo span {
+    font-weight: 600;
+    color: var(--verde);
+}
+
+#voltarMenu {
+    position: fixed;
+    top: 80px;
+    left: 80px;
+    background: transparent;
+    border: 1px solid #059669;
+    color: var(--verde);
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+#voltarMenu:hover {
+    color: white;
+    background-color: #10b981;
+    border-radius: 5px;
+}
+
+#mensagemFinal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 64px;
+    font-weight: 800;
+    letter-spacing: 3px;
+
+    color: white;
+    background: rgba(16, 185, 129, 0.25);
+
+    backdrop-filter: blur(8px);
+
+    z-index: 999;
+
+    animation: aparecer 0.4s ease;
+}
+#tentativasRestantes{
+    position: fixed;
+    top: 110px;
+    left: 80px;
+    transition: 0.2s ease;
+    padding: 4px;
+    
+}
+#letrasUsadas{
+    color: rgb(235, 92, 92);
+}

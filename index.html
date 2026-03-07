@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MECRO - descubra a palavra</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="img/favic.ico" type="image/x-icon">
+    </head>
+    <body>  
+        <div id="menu" class="container">
+            
+            <h1>MECRO</h1>
+
+            <p>Modo de jogo</p>
+            <div class="opcoes" id="modo">
+                <button class="opcao ativo">Palavra do dia</button>
+                <button class="opcao">Personalizada</button>
+            </div>
+
+            <p id="textodificul">Dificuldade</p>
+            <div class="opcoes" id="dificuldade">
+                <button class="opcao ativo">Fácil</button>
+                <button class="opcao">Médio</button>
+                <button class="opcao">Difícil</button>
+            </div>
+
+            <div id="palavraSelecionada" style="display: none;">
+                <p>Digite a palavra secreta</p>
+                <input type="text" id="palavraInput">
+            </div>
+
+            <button class="comecar">Começar</button>
+        </div>
+
+            <!--------------------------------- Jogo ------------------------------------------>
+            
+        <div id="jogo" style="display: none;">
+            <button id="voltarMenu">Voltar ao Menu</button>
+
+            <p id="tentativasRestantes">Tentativas: <span id="tentativasRestantes"></span></p>
+
+            <h2>DESCUBRA A PALAVRA</h2>
+
+
+            <div id="palavraExibida"></div>
+
+            <div>
+                <input type="text" id="letraInput" maxlength="1" placeholder="Digite uma letra">
+                <button id="enviarLetra">Enviar</button>
+            </div>
+
+            <p>Letras usadas: <span id="letrasUsadas"></span></p>
+
+            <p id="mensagemFinal"></p>
+
+        </div>
+
+
+
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
