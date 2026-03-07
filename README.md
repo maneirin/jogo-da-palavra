@@ -6,7 +6,7 @@ antes que as tentativas acabem.
 
 ------------------------------------------------------------------------
 
-# Regras do Jogo
+Regras do Jogo
 
 -   O jogador deve descobrir uma **palavra secreta**.
 -   A palavra aparece na tela com **\_ (traços)** representando cada
