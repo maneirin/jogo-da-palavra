@@ -1,4 +1,4 @@
-# 🎮 Jogo da Palavra
+# Jogo da Palavra
 
 Projeto de um jogo de adivinhação de palavras desenvolvido com **HTML,
 CSS e JavaScript**. O objetivo do jogo é descobrir a palavra secreta
@@ -6,7 +6,7 @@ antes que as tentativas acabem.
 
 ------------------------------------------------------------------------
 
-# 📜 Regras do Jogo
+# Regras do Jogo
 
 -   O jogador deve descobrir uma **palavra secreta**.
 -   A palavra aparece na tela com **\_ (traços)** representando cada
@@ -42,7 +42,7 @@ O jogo termina quando:
 
 ------------------------------------------------------------------------
 
-# 🔤 Lista de Variáveis
+# Lista de Variáveis
 
   -----------------------------------------------------------------------
   Variável                            Função
@@ -75,7 +75,7 @@ O jogo termina quando:
 
 ------------------------------------------------------------------------
 
-# 🔄 Fluxo do Jogo
+# Fluxo do Jogo
 
 1.  O jogador escolhe o **modo de jogo**.
 2.  O jogador escolhe a **dificuldade**.
@@ -96,7 +96,7 @@ O jogo termina quando:
 
 ------------------------------------------------------------------------
 
-# 🧠 Pseudocódigo
+#  Pseudocódigo
 
     INÍCIO
 
@@ -133,7 +133,7 @@ O jogo termina quando:
 
 ------------------------------------------------------------------------
 
-# 🛠 Tecnologias utilizadas
+# Tecnologias utilizadas
 
 -   HTML
 -   CSS
