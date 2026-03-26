@@ -141,4 +141,7 @@ O jogo termina quando:
 
 ------------------------------------------------------------------------
 
+# 👨‍💻 Autor
 
+Projeto desenvolvido por **Thiago** para praticar lógica de programação
+e manipulação do DOM em JavaScript.
