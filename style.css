@@ -243,3 +243,104 @@ p {
 #letrasUsadas{
     color: rgb(235, 92, 92);
 }
+/* Responsivo com o cell */
+
+@media (max-width: 768px) {
+
+    body {
+        min-height: 100vh;
+        padding: 20px;
+        align-items: flex-start;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 30px 20px;
+        border-radius: 16px;
+    }
+
+    h1 {
+        font-size: 28px;
+        letter-spacing: 4px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .opcoes {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .opcao {
+        width: 100%;
+    }
+
+    .comecar {
+        padding: 14px;
+        font-size: 14px;
+    }
+
+    /* JOGO */
+
+    #jogo {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #jogo h2 {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+
+    #palavraExibida {
+        font-size: 24px;
+        letter-spacing: 10px;
+        margin: 30px 0;
+    }
+
+    #jogo input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #enviarLetra {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #jogo div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* REMOVE POSIÇÕES QUE QUEBRAM NO MOBILE */
+
+    .infoJogo {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    #voltarMenu {
+        position: static;
+        margin-bottom: 15px;
+    }
+
+    #tentativasRestantes {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    /* TELA FINAL */
+
+    #mensagemFinal {
+        font-size: 32px;
+        padding: 20px;
+        text-align: center;
+    }
+}
